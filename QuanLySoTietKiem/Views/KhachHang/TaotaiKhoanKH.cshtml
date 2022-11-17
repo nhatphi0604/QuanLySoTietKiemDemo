@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "Tạo tài khoản";
+    Layout = "~/Views/Shared/DangNhap-DangKiLayout.cshtml";
+    <style>
+        h5 {
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .area {
+            border: 2px solid;
+            width: 900px;
+            margin: auto;
+        }
+
+        .ip-name {
+            margin-top: 20px;
+            width: 420px;
+        }
+
+        .ip-ngaysinh {
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .ip-cccdcmnd{
+            width: 170px;
+            margin-top: 20px;
+        }
+
+        .ip-ngaycap {
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .ip-sdt{
+            margin-top: 20px;
+        }
+
+        .ip-email{
+            margin-top: 20px;
+            margin-right: 20px;
+            width: 405px;
+        }
+
+        .ip-diachi{
+            margin-top: 20px;
+            width: 775px;
+            margin-right: 20px;
+        }
+
+        .ip-matkhau{
+            margin-top: 20px;
+            width: 250px;
+        }
+
+        .ip-matkhau-2{
+            margin-top: 20px;
+            width: 250px;
+        }
+
+        .area label {
+            margin-left: 20px;
+        }
+
+        .button {
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+}
+<h5>TẠO TÀI KHOẢN</h5>
+<div class="area">
+    <label>Họ và tên: </label>
+    <input class="ip-name" type="text" />
+
+    <label>Ngày sinh: </label>
+    <input class="ip-ngaysinh" type="date" /> <br />
+
+    <label>Giới tính: </label>
+    <input class="ip-gioitinh" type="radio" value="Nam"/> Nam
+    <input class="ip-gioitinh" type="radio" value="Nữ" /> Nữ
+
+    <label>CCCD/CMND: </label>
+    <input class="ip-cccdcmnd" type="text" />
+
+    <label>Ngày cấp: </label>
+    <input class="ip-ngaycap" type="date" /> <br />
+
+    <label>Số điện thoại: </label>
+    <input class="ip-sdt" type="text" />
+
+    <label>Email: </label>
+    <input class="ip-email" type="email"/> <br />
+
+    <label>Địa chỉ: </label>
+    <input class="ip-diachi" type="text"/> <br />
+
+    <label>Nhập mật khẩu: </label>
+    <input class="ip-matkhau" type="password"/>
+
+    <label>Nhập lại mật khẩu: </label>
+    <input class="ip-matkhau-2" type="password" />
+
+    <div class="button">
+        <button type="button">Đăng ký</button>
+        <button type="button">Hủy</button>
+    </div>
+</div>
+

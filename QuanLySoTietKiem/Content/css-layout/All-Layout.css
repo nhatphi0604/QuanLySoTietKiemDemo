@@ -1,0 +1,39 @@
+﻿.wrapper{
+    max-width: 100%;
+    margin: 0px auto;
+}
+.header {
+    height: 50px;
+    border-bottom: 2px solid;
+    display: flex;
+    background-color: #CCCC00;
+}
+.txt-xinchao{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.icon {
+    margin-top:10px;
+    margin-left: 85%;
+}
+.main-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.sidebar {
+    height: 570px;
+    flex-basis: 25%;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    background-color: #003333;
+}
+.menu a{
+   background-color: #003333;
+   color: white;
+}
+.content {
+    flex-basis: 75%;
+    background-color: #99CC99;
+}

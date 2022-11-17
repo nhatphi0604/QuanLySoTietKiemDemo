@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "ThayDoiThoiGianNVKT";
+    Layout = "~/Views/Shared/NhanVienKeToanLayout.cshtml";
+    <style>
+        .min-content {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .title {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .sl-loaisotietkiem {
+            width: 720px;
+        }
+
+        .ip-sotienthaydoi {
+            width: 400px;
+            margin-top: 20px;
+        }
+
+        .rdo-guitien {
+            margin-left: 20px;
+        }
+
+        .rdo-ruttien {
+            margin-left: 20px;
+        }
+
+        .button {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+}
+
+<div class="min-content">
+    <h5 class="title">THAY ĐỔI THỜI GIAN</h5>
+
+    <div class="nhap">
+        <label>Loại sổ tiết kiệm: </label>
+        <select class="sl-loaisotietkiem">
+            <option value="Sổ tiết kiệm Đại Lộc">Sổ tiết kiệm Đại Lộc</option>
+            <option value="Sổ tiết kiệm Lộc Bảo Toàn">Sổ tiết kiệm Lộc Bảo Toàn</option>
+            <option value="Sổ tiết kiệm tích lũy An Cư Đại Lộc">Sổ tiết kiệm tích lũy An Cư Đại Lộc</option>
+            <option value="Sổ tiết kiệm có kì hạn">Sổ tiết kiệm có kì hạn</option>
+        </select> <br />
+
+        <label>Nhập thời gian thay đổi: </label>
+        <input class="ip-sotienthaydoi" type="text" />
+
+        <input class="rdo-guitien" type="radio" value="Gửi tiền" /> Gửi tiền
+        <input class="rdo-ruttien" type="radio" value="Rút tiền" /> Rút tiền
+
+        <br />
+    </div>
+
+    <div class="button">
+        <button type="button">Thay đổi</button>
+        <button type="button">Hủy</button>
+    </div>
+</div>
+
+
+

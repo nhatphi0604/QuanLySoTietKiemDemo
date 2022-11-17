@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "ThayDoiLaiSuatNVKT";
+    Layout = "~/Views/Shared/NhanVienKeToanLayout.cshtml";
+
+    <style>
+        .min-content{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .title{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .sl-loaisotietkiem{
+            width: 720px;
+        }
+        .sl-kihan{
+            margin-top:20px;
+            width: 350px;
+        }
+        .ip-laisuat{
+            width: 375px;
+            margin-top: 20px;
+        }
+        .button{
+            margin-top:50px;
+            text-align: center;
+        }
+    </style>
+}
+
+<div class="min-content">
+    <h5 class="title">THAY ĐỔI LÃI SUẤT</h5>
+    <div class="nhap">
+        <label>Loại sổ tiết kiệm: </label>
+        <select class="sl-loaisotietkiem">
+            <option value="Sổ tiết kiệm Đại Lộc">Sổ tiết kiệm Đại Lộc</option>
+            <option value="Sổ tiết kiệm Lộc Bảo Toàn">Sổ tiết kiệm Lộc Bảo Toàn</option>
+            <option value="Sổ tiết kiệm tích lũy An Cư Đại Lộc">Sổ tiết kiệm tích lũy An Cư Đại Lộc</option>
+            <option value="Sổ tiết kiệm có kì hạn">Sổ tiết kiệm có kì hạn</option>
+        </select> <br />
+
+        <label>Kì hạn: </label>
+        <select class="sl-kihan">
+            <option value="6 tháng">6 tháng</option>
+            <option value="12 tháng">12 tháng</option>
+            <option value="24 tháng">24 tháng</option>
+        </select>
+
+        <label>Lãi suất: </label>
+        <input class="ip-laisuat" type="text" />
+        <br />
+
+        <div class="button">
+            <button type="button">Thay đổi</button>
+            <button type="button">Hủy</button>
+        </div>
+    </div>
+</div>
+

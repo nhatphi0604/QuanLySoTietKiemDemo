@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap-5.2.2-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css-layout/All-Layout.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="txt-xinchao"><p>Xin chào</p></div>
+            <div class="icon">
+                <a href=""><img width="25" height="30" src="~/Image/exit.png" /></a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="menu list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Mở sổ tiết kiệm</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Lập phiếu gửi tiền</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Lập phiếu rút tiền</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Ngân hàng liên kết</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Danh sách sổ tiết kiệm</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Tra cứu lịch sử</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Chuyển nhượng sổ tiết kiệm</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Thông tin cá nhân</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Gia hạn sổ tiết kiệm</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Thay đổi mật khẩu</a>
+                </div>
+            </div>
+            <div class="content">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

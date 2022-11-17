@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "TinhLaiSuat_NVKT";
+    Layout = "~/Views/Shared/NhanVienKeToanLayout.cshtml";
+    <link href="~/Content/css-layout/TinhLaiSuat.css" rel="stylesheet" />
+}
+
+<h6>TÍNH LÃI SUẤT</h6>
+<form class="content-form">
+    <label>Số tài khoản: </label>
+    <input type="text" placeholder="Nhập số tài khoản" />
+
+    <label>Từ ngày: </label>
+    <input class="date" type="date" />
+
+    <label>Đến ngày: </label>
+    <input class="date" type="date" /> <br />
+
+    <label>Tên khách hàng: </label>
+    <input id="ip-name" type="text" />
+
+    <label>Số dư hiện tại: </label>
+    <input id="ip-sodu" type="text" /> <br />
+
+    <label>Lãi suất: </label>
+    <input id="ip-laisuat" type="text" />
+
+    <button type="button" class="btn btn-secondary">Tính</button> <br />
+
+    <p>Kết quả</p> <br />
+
+    <label>Tiền lãi: </label>
+    <input id="ip-tienlai" type="text"/>
+    <label>VND</label>
+</form>
+

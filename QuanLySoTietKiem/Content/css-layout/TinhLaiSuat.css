@@ -1,0 +1,39 @@
+﻿.content-form {
+    border: 1px solid;
+    margin-left: 20px;
+    padding: 20px;
+    width: 930px;
+}
+
+.date {
+    width: 175px;
+}
+
+.content-form input {
+    margin-bottom: 20px;
+}
+
+.content-form p {
+    margin-bottom: 0px;
+}
+
+.content-form button {
+    margin-bottom: 20px;
+    margin-left: 420px;
+}
+
+#ip-name {
+    width: 350px;
+}
+
+#ip-laisuat {
+    width: 810px;
+}
+
+#ip-sodu {
+    width: 250px;
+}
+
+#ip-tienlai {
+    width: 750px;
+}

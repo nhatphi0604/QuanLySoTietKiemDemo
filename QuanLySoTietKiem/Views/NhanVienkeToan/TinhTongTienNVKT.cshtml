@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "TinhTongTienNVKT";
+    Layout = "~/Views/Shared/NhanVienKeToanLayout.cshtml";
+
+    <style>
+        .min-content{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .title{
+            margin-top: 20px;
+            text-align:center;
+            margin-bottom: 50px;
+        }
+        .button{
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .nhap input{
+            margin-top: 20px;
+        }
+        .nhap select{
+            width: 710px;
+        }
+        .output-ketqua{
+            width: 750px;
+        }
+        .rdo-guitien{
+            margin-left: 20px;
+        }
+        .rdo-ruttien{
+            margin-left: 20px;
+        }
+    </style>
+}
+
+<div class="min-content">
+    <h5 class="title">TÍNH TỔNG TIỀN</h5>
+
+    <div class="nhap">
+        <label>Loại sổ tiết kiệm: </label>
+        <select>
+            <option value="Sổ tiết kiệm Đại Lộc">Sổ tiết kiệm Đại Lộc</option>
+            <option value="Sổ tiết kiệm Lộc Bảo Toàn">Sổ tiết kiệm Lộc Bảo Toàn</option>
+            <option value="Sổ tiết kiệm tích lũy An Cư Đại Lộc">Sổ tiết kiệm tích lũy An Cư Đại Lộc</option>
+            <option value="Sổ tiết kiệm có kì hạn">Sổ tiết kiệm có kì hạn</option>
+        </select> <br />
+
+        <label>Từ ngày: </label>
+        <input class="ip-date" type="date" />
+
+        <label>Đến ngày: </label>
+        <input class="ip-date" type="date" />
+
+        <input class="rdo-guitien" type="radio" value="Gửi tiền" /> Gửi tiền
+        <input class="rdo-ruttien" type="radio" value="Rút tiền" /> Rút tiền
+
+        <br />
+    </div>
+
+    <div class="button">
+        <button class="btn-tinh">Tính</button>
+    </div>
+
+    <p style="margin-top: 50px; margin-bottom: 0px;">Kết quả</p> <br />
+
+    <div class="ketqua">
+        <label>Tổng: </label>
+        <input class="output-ketqua" type="text" /> <label>VNĐ</label>
+    </div>
+</div>
+

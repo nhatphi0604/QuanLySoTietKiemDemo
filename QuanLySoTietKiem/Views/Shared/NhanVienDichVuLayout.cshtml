@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap-5.2.2-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css-layout/All-Layout.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="txt-xinchao"><p>Xin chào</p></div>
+            <div class="icon">
+                <a href=""><img width="25" height="30" src="~/Image/exit.png" /></a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="menu list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Tra cứu thông tin sổ tiết kiệm</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Tra cứu số dư</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Tra cứu thông tin khách hàng</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Danh sách khách hàng</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Lập báo cáo</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Thêm quy định</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Sửa quy định</a>
+                </div>
+            </div>
+            <div class="content">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>
