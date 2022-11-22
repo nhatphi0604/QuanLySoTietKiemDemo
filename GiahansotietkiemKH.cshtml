@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "GiahansotietkiemKH";
+    Layout = "~/Views/Shared/KhachHangLayout.cshtml";
+    <style>
+        .min-content {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .title {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .ip-nhap {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .rdo-chonloaikihan {
+            margin-left: 20px;
+        }
+    </style>
+
+}
+<div class="min-content">
+    <h5 class="title">Lập phiếu gửi tiền</h5>
+    <div class="nhap">
+        <label>Số tài khoản: </label>
+        <input class="ip-nhap" type="text" /><br /><br />
+        <label>Chọn loại kì hạn</label>
+        <input class="rdo-chonloaikihan" type="radio" value="6 tháng" /> 6 tháng
+        <input class="rdo-chonloaikihan" type="radio" value="12 tháng" /> 12 tháng
+        <input class="rdo-chonloaikihan" type="radio" value="24 tháng" /> 24 tháng
+    </div>
+    <div class="button">
+        <button type="button">Lưu</button>
+        <button type="button">Hủy</button>
+    </div>
+</div>
+

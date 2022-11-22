@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "MosotietkienKH";
+    Layout = "~/Views/Shared/KhachHangLayout.cshtml";
+    <style>
+        .min-content {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .title {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .ip-nhap {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .ip-date {
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+    </style>
+}
+
+<div class="min-content">
+    <h5 class="title">Lập phiếu gửi tiền</h5>
+    <div class="nhap">
+        <label>Số tài khoản: </label>
+        <input class="ip-nhap" type="text" />
+        <label>Họ và tên: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Số sổ tiết kiệm: </label>
+        <input class="ip-nhap" type="text" />
+        <label>Tên sổ tiết kiệm: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Số điện thoại: </label>
+        <input class="ip-nhap" type="text" />
+        <label>Email: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Số tiền gửi bằng số: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Số tiền gửi bằng chữ: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Ngày gửi: </label>
+        <input class="ip-date" type="date" />
+        <label>Nguồn tiền: </label>
+        <select>
+            <option value="">Chọn nguồn tiền</option>
+        </select> <br />
+        <br />
+    </div>
+    <div class="button">
+        <button type="button">Gửi tiền</button>
+        <button type="button">Hủy</button>
+    </div>
+</div>
+

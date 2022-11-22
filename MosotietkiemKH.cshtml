@@ -1,0 +1,114 @@
+﻿
+@{
+    ViewBag.Title = "MosotietkiemKH";
+    Layout = "~/Views/Shared/KhachHangLayout.cshtml";
+    <style>
+        .min-content {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .title {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .ip-nhap {
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .rdo-dongy {
+            margin-left: 20px;
+        }
+
+        .sl-loainganhang {
+            width: 320px;
+        }
+
+        .sl-kihan {
+            margin-top: 20px;
+            width: 350px;
+        }
+
+        .ip-date {
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+
+        .area {
+            border: 2px solid;
+            width: 900px;
+            margin: auto;
+        }
+    </style>
+}
+
+<div class="min-content">
+    <h5 class="title">Mở sổ tiết kiệm</h5>
+    <div class="nhap">
+        <label>Họ và tên: </label>
+        <input class="ip-nhap" type="text" />
+        <label>Ngày sinh: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Giới tính: </label>
+        <input class="ip-nhap" type="text" />
+        <label>CCCD/CMND: </label>
+        <input class="ip-nhap" type="text" />
+        <label>Số điện thoại: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Email: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Địa chỉ: </label>
+        <input class="ip-nhap" type="text" /><br /><br />
+        <label>Loại sổ tiết kiệm: </label>
+        <select class="sl-loainganhang">
+            <option value="Chọn loại sổ tiết kiệm">Chọn loại sổ tiết kiệm</option>
+        </select>
+        <label>Kì hạn</label>
+        <input class="rdo-dongy" type="radio" />6 tháng
+        <input class="rdo-dongy" type="radio" />12 tháng
+        <input class="rdo-dongy" type="radio" />24 tháng
+        <br />
+        <label>Ngày phát hành</label>
+        <input class="ip-date" type="date" />
+        <label>Ngày đến hạn</label>
+        <input class="ip-date" type="date" />
+    </div>
+    <div class="button">
+        <button type="button">Xác nhận</button>
+        <button type="button">Hủy</button>
+    </div>
+    <p>Thông tin loại sổ tiết kiệm</p>
+    <p>Sổ tiết kiệm Đại Lộc</p>
+    <div class="area">
+        <p>Các cá nhân Việt Nam và cá nhân nước ngoài đang giao dịch tại ACB</p>
+        <p>Tặng thêm lãi suất duy trì:Khách hàng được tăng thêm lãi suất nếu duy trì tiết kiệm Đại Lộc thêm 1 kì 6 tháng</p>
+    </div>
+    <p>Sổ tiết kiệm Lộc Bảo Toàn</p>
+    <div class="area">
+        <p>
+            KH cá nhân có đủ năng lực hành vi dân sự được gửi tiết kiệm Lộc Bảo Toàn tại ACB(chỉ áp dụng 1 chủ sở hữu) bao gồm :
+            <p>Cá nhân là người cư trú</p>
+            <p>Cá nhân là người nước ngoài đang sinh sống và hoạt động hợp pháp tại VN</p>
+        <p>Khách hàng được hưởng thêm quyền lợi bảo hiểm trong trường hợp không may rủi ro (tử vong hoặc thương tật toàn bộ vĩnh viển do mọi nguyên nhân)</p>
+    </div>
+    <p>Sổ tiết kiệm An Cư Đại Lộc</p>
+    <div class="area">
+        <p>Khách hàng được gửi thêm nhiều lần vào sổ tích lũy (STL) đến trước ngày đáo hạn 30 ngày và rút gốc 1 lần khi tất toán</p>
+    </div>
+    <p>Tiết kiệm có kì hạn</p>
+    <div class="area">
+        <p> VNĐ : Cá nhân người VN và người nước ngoài</p>
+        <p> USD : Cá nhân người VN Và cá nhân người nước ngoài cư trú</p>
+        <p> Qúy khách có thể rút vốn trước hạn</p>
+        <p> Vào ngày gửi tiền hoặc trước ngày đến hạn,quý khách có thể yêu cầu ACB chuyển sang kì hạn khác với kì hạn ban đầu gửi</p>
+        <p> Qúy khách được chuyển quyền sở hữu khi sổ tiết kiệm chưa đến hạn thanh toán để bảo toàn lãi</p>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "TracuulichsuKH";
+    Layout = "~/Views/Shared/KhachHangLayout.cshtml";
+    <style>
+        .min-content {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .title {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .sl-loaisotietkiem {
+            width: 720px;
+        }
+
+        .rdo-guitien {
+            margin-left: 20px;
+        }
+
+        .rdo-ruttien {
+            margin-left: 20px;
+        }
+
+        .ip-nhap {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .ip-date {
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+
+        .output-ketqua {
+            width: 750px;
+        }
+    </style>
+}
+
+<div class="min-content">
+    <h5 class="title">Tra cứu lịch sử</h5>
+    <div class="nhap">
+        <label>Số tài khoản: </label>
+        <input class="ip-nhap" type="text" />
+        <label>Họ và tên khách hàng: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Từ ngày: </label>
+        <input class="ip-date" type="date" />
+        <label>Đến ngày:</label>
+        <input class="ip-date" type="date" />
+        <input class="rdo-guitien" type="radio" value="Gửi tiền" /> Gửi tiền
+        <input class="rdo-ruttien" type="radio" value="Rút tiền" /> Rút tiền
+        <br />
+    </div>
+    <div class="button">
+        <button type="button">Tra cứu</button>
+    </div>
+    <p style="margin-top: 50px; margin-bottom: 0px;">Kết quả</p> <br />
+
+    <div class="ketqua">
+        <label>Từ: </label>
+        <input class="ip-nhap" type="text" />
+        <label>Đến: </label>
+        <input class="ip-nhap" type="text" /><br /><br />
+        <input class="output-ketqua" type="text" /> <label>VNĐ</label>
+    </div>
+</div>
+
+

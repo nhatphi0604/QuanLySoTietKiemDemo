@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "ThongtincanhanKH";
+    Layout = "~/Views/Shared/KhachHangLayout.cshtml";
+    <style>
+        .min-content {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .title {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .ip-nhap {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .rdo-chonloaikihan {
+            margin-left: 20px;
+        }
+    </style>
+}
+
+<div class="min-content">
+    <h5 class="title">Thông tin cá nhân</h5>
+    <div class="nhap">
+        <label>Họ và tên: </label>
+        <input class="ip-nhap" type="text" />
+        <label>Ngày sinh: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Giới tính: </label>
+        <input class="ip-nhap" type="text" />
+        <label>Số điện thoại: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Email: </label>
+        <input class="ip-nhap" type="text" />
+        <label>CMND/CCCD: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Ngày cấp: </label>
+        <input class="ip-nhap" type="text" />
+        <label>Địa chỉ: </label>
+        <input class="ip-nhap" type="text" /><br />
+    </div>
+    <div class="button">
+        <button type="button">Sửa thông tin</button>
+        <button type="button">Hủy</button>
+    </div>
+</div>

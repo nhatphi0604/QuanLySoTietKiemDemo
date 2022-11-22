@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "LienketnganhangKH";
+    Layout = "~/Views/Shared/KhachHangLayout.cshtml";
+    <style>
+        .min-content {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .title {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .ip-nhap {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .rdo-chonloaikihan {
+            margin-left: 20px;
+        }
+
+        .sl-loainganhang {
+            width: 720px;
+        }
+
+        .ip-date {
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+    </style>
+}
+
+<div class="min-content">
+    <h5 class="title">Liên kết ngân hàng</h5>
+    <div class="nhap">
+        <label>Ngân hàng: </label>
+        <select class="sl-loainganhang">
+            <option value="">Chọn ngân hàng</option>
+        </select>
+        <br />
+        <label>Họ và tên: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Số tài khoản: </label>
+        <input class="ip-nhap" type="text" /><br />
+        <label>Ngày mở: </label>
+        <input class="ip-date" type="date" />
+        <label>Ngày đến hạn: </label>
+        <input class="ip-date" type="date" />
+
+    </div>
+    <div class="button">
+        <button type="button">Xác thực</button>
+        <button type="button">Hủy</button>
+    </div>
+</div>
+
